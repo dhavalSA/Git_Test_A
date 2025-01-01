@@ -1,0 +1,106 @@
+/* General styling for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login container with two sections */
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Left section for Facebook logo and description */
+.login-left {
+    flex: 1;
+    margin-right: 50px;
+}
+
+.login-left h1 {
+    color: #1877f2;
+    font-size: 4rem;
+}
+
+.login-left p {
+    font-size: 1.5rem;
+}
+
+/* Right section for the form */
+.login-right {
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Input fields */
+.input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 14px;
+    font-size: 1rem;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+}
+
+/* Button styles */
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #165dd3;
+}
+
+/* Forgot password link */
+.forgot {
+    display: block;
+    margin: 15px 0;
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Separator line */
+.line {
+    border-bottom: 1px solid #dddfe2;
+    margin: 20px 0;
+}
+
+/* "Create new account" button */
+.create-btn {
+    background-color: #42b72a;
+    color: white;
+    padding: 14px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.create-btn:hover {
+    background-color: #36a420;
+}
+
+/* Footer section */
+.footer {
+    margin-top: 30px;
+    font-size: 0.8rem;
+}
