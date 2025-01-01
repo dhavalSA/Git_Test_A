@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up for Facebook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 430px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .container h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .container p {
+            color: #606770;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+        .input {
+            width: 100%;
+            margin: 10px 0;
+            padding: 14px;
+            font-size: 1rem;
+            border: 1px solid #ccd0d5;
+            border-radius: 6px;
+        }
+        .name {
+            display: flex;
+            justify-content: space-between;
+        }
+        .name .input {
+            width: 48%;
+        }
+        .select {
+            width: 100%;
+            margin: 10px 0;
+            padding: 14px;
+            font-size: 1rem;
+            border: 1px solid #ccd0d5;
+            border-radius: 6px;
+        }
+        .signup-btn {
+            width: 100%;
+            padding: 14px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #42b72a;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .signup-btn:hover {
+            background-color: #36a420;
+        }
+        .login-link {
+            margin-top: 20px;
+        }
+        .login-link a {
+            color: #1877f2;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Create a new account</h1>
+        <p>It's quick and easy.</p>
+        <form>
+            <div class="name">
+                <input type="text" class="input" placeholder="First name" required>
+                <input type="text" class="input" placeholder="Last name" required>
+            </div>
+            <input type="text" class="input" placeholder="Mobile number or email" required>
+            <input type="password" class="input" placeholder="New password" required>
+
+            <label for="birthday">Birthday</label>
+            <input type="date" id="birthday" class="select" required>
+
+            <label>Gender</label>
+            <div class="name">
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="custom"> Custom</label>
+            </div>
+
+            <button type="submit" class="signup-btn">Sign Up</button>
+        </form>
+
+        <div class="login-link">
+            <p>Already have an account? <a href="#">Log In</a></p>
+        </div>
+    </div>
+</body>
+</html>
